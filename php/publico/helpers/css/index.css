@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Header{
+    font-weight: bolder;
+    width:100%;
+    padding: 30px;
+    color:#ffffff;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    position:fixed;
+    top:0;
+    left:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    z-index: 100;
+    
+}
+a{
+    color: #18191f;
+}
+.active{
+    background: #ffffff;
+}
+
+.Header a{
+    padding: 20px 20px;
+    text-decoration:none;
+}
+
+.Header input{
+    border:none;
+    padding:5px;
+    border-bottom:2px solid #18191f;
+    margin-left:0px;
+
+}
+
+.Header input:focus{
+    outline: none;
+    border-bottom:2px solid #8c30f5;
+}
+
+
+  /*=================================================*/
+
+#headerMenu{
+    padding-top: 10px;
+    margin-left: -80px;
+}
+.headerMenu a{
+    color: #000;
+}
+
+
+.btnMenuHeader{
+    color: #18191f;
+}
+
+.btnMenuHeader:hover{
+    border-bottom:1px solid #8c30f5;
+    transition: 0.5s all ease;
+}
+
+
+
+  /*=================================================*/
+
+#header_menu-btn{
+    border-radius: 10px;
+    padding-top: 200px;
+    border: #000;
+    padding-top: 15px;
+}
+.header_menu-btn a{ 
+    margin-left:10px;
+    padding:0px 0px;
+}
+
+.btnPremium{
+    background-color: #fff;
+    color: #2273A3;
+    border-radius: 10px;
+    border:solid 1px #2273A3;
+  }
+
+.btnCerrar{
+    background-color: #2273A3;
+    color: #fff;
+    border-radius: 0px;
+  }
+
+
+/*===================MAIN==========================*/
+.contenedorFondo{
+    background: fixed no-repeat 50% 50%;
+    background-size:cover; 
+    background-image:url('../neww.png');
+    width: 100%;
+    height: 900px;
+  }
+  
+  .contenedorFondo img{
+      display: none;
+      
+  }
+
+  .contenedorPremium{
+    width:100%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    
+    padding:20px 0;
+    flex-wrap:wrap;
+  }
+
+
+.contenedorPremium img{
+    padding-top: 20px;
+    width: 200px;
+}
+
+.contenedorCard{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    margin-right: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 400px;
+    padding-bottom: 20px;
+}
+
+.contenedorCard img{
+    width: 350px;
+    height: 250px;
+}
+
+.contenedorCard p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    margin: 10px 0;
+}
+.contenedorCard button{
+    border: none;
+    background: #8C30F5;
+    color: #ffffff;
+    width: 103.18px;
+    height: 29px;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+
+.contenedorOriginales{
+    margin: 0 auto;
+    width: 80%;
+
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 30px;
+}
+
+.contenedorOriginales img{
+    width: 250px;
+    height: 302px;
+}
+
+
+.ContenedorCategorias{
+    width:100%;
+    display:inline;
+    grid-template-columns: repeat(2, 1fr);
+    width:70%;
+    margin:40px auto;
+}
+
+.contenedorLinks{
+    text-align: center;
+    display:inline;
+    grid-template-rows:  repeat(2, 1fr);
+    row-gap: 40px;
+}
+
+.contenedorLinks a{
+    border: none;
+    background: #2273A3;
+    color: #ffffff;
+    width: 103.18px;
+    height: 29px;
+    border-radius: 3px;
+}
+
+.contenedorCard button{
+    border: none;
+    background: #9e9ba2;
+    color: #ffffff;
+    width: 60px;
+    height: 35px;
+    border-radius: 3px;
+    cursor: context-menu;
+
+}
+
+
+.ContenedorLinksSec{
+    text-align:center;
+    display:grid;
+    grid-template-rows:  repeat(2, 1fr);
+    row-gap: 40px;
+}
+
+.ContenedorLinksSec a{
+    background: #A5A6F6;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding:20px;
+    width:50%;
+    margin: 0 auto; 
+    text-decoration:none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 196.19%;
+    color: #241400;
+}
+
+
+/*******************FOOTER*****************/
+
+.contenedorFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 96px 35px;
+    width: 100%;
+    height: auto;
+    margin-top:100px;
+    justify-content:center;
+    max-width: 2833px;
+    background: #0B0D17;
+}
+.contenedorFooter p{
+    color:#fff;
+}
+.contenedorSoporte{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding:0 300px;
+    color:#D6B1FF;
+}
+
+.contenedorSoporte a{
+    color:#EEEFF4;
+    text-decoration:none;
+    padding:20px 0px;
+}
+.contenedorSoporte h4{
+    color: #D6B1FF;
+}
+
+@media screen and (max-width: 414px){
+    .contenedorFooter{
+        padding: 96px 0;
+        flex-direction: column;
+    }
+    .contenedorSoporte{
+        padding: 0px 0px;
+        margin-top:40px;
+        width: 100%;
+    }
+
+  }
+
+
+.btnren{
+    border-radius: 10px;
+}
+
+.lupa{
+    color: #2273A3;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.vermas{
+    border: none;
+    background: #2273A3;
+    color: #ffffff;
+    height: 29px;
+    cursor: pointer;
+    
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding:10px 40px;
+    width:50%;
+    margin: 0 auto; 
+    text-decoration:none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.contenedorPremium img{
+    padding-top: 20px;
+    width: 200px;
+    height: 300px;
+}
+
+.contenedorCardc{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    margin-right: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 400px;
+    padding-bottom: 20px;
+}
+
+.contenedorCardc img{
+    width: 350px;
+    height: 250px;
+}
+
+.contenedorCardc p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    margin: 10px 0;
+}
+.contenedorCardc button{
+    border: none;
+    background: #2273A3;
+    color: #ffffff;
+    width: 103.18px;
+    height: 29px;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+.contenedorCard{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    margin-right: 20px;
+    text-align: center;
+    width: 300px;
+    padding-bottom: 20px;
+}
+
+
+.btnpr{
+    border: none;
+    background: #2273A3;
+    color: #ffffff;
+    height: 80px;
+    cursor: pointer;
+    
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding:10px;
+    width:25%;
+    margin: 0 auto; 
+    text-decoration:none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 196.19%;
+
+    margin-right: 0%;
+    margin-top: 5%;
+
+    
+}
+
+
+.btnbl{
+    border: none;
+    background: #9e9ba2;
+    color: #ffffff;
+    width: 60px;
+    height: 35px;
+    border-radius: 3px;
+    cursor: context-menu;
+}
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+
+nav ul{
+    float: left;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+  
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+section{
+    background: url(fondo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        top: 155px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        text-align: justify;
+        border-bottom: 1px solid grey;
+        
+    }
+    nav ul li a{
+        font-size: 20px;
+        
+        
+        
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+
+    .btnbu{
+        border: none;
+        background: #fff;
+        color: #8C30F5;
+        width: 40px;
+        height: 29px;
+        border-radius: 3px;
+        cursor: pointer;
+}
+
+#header_menu-btn{
+    padding-top: 30px;
+}
+
+    
+}
+
+#me{
+  color:blue;
+}
